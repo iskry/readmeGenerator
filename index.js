@@ -1,7 +1,10 @@
-// TODO: Include packages needed for this application
-const genMarkdown = require("./utils/generateMarkdown")
+// TODO: Include packages needed for this application)
 const inquirer = require("inquirer")
-const fs = require("fs")
+const { builtinModules } = require("module")
+const generateMarkdown = require("./utils/generateMarkdown")
+
+// TODO: Create a function to initialize app
+function init() {
 
 inquirer.prompt([
     {
@@ -35,15 +38,13 @@ inquirer.prompt([
       message: "What is the relative path to an image of your project?"
     },
   ])
-
-
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
-
-// TODO: Create a function to initialize app
-function init() {
-
+  .then((response) => {
+    generateMarkdown(response)
+  }
+  )
 }
 
 // Function call to initialize app
 init();
+
+module.exports = init
