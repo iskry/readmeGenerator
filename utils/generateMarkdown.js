@@ -20,7 +20,6 @@ ${answers.installation}
 ${answers.usage}
 ## License
 ![badge](https://img.shields.io/badge/license-${answers.license}-9cf)<br />
-${answers.license}
 ## Contributing
 ${answers.contribute}
 ## Tests
