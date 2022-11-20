@@ -1,27 +1,39 @@
-const index = require('../index.js')
-const {readFileSync, writeFileSync} = require('fs')
-
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
-function renderLicenseBadge(license) {}
-
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-function renderLicenseLink(license) {}
-
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
-function renderLicenseSection(license) {}
+const {writeFileSync} = require('fs')
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(answers) {
-  writeFileSync(`./readmes/${answers.title}.md`, `# ${answers.title}`)
-  writeFileSync(`./readmes/${answers.title}.md`, `
-  ${answers.description}
-  ${answers.installation}
-  ${answers.contribute}
-  ${answers.license}
-  ${answers.project}`, {flag: 'a'})
+  writeFileSync(`./result/README.md`, `# ${answers.title}
+![badge](https://img.shields.io/badge/license-${answers.license}-9cf)<br />
+## Description  
+${answers.description}
+## Table of Contents
+- [Description](#description)
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [Questions](#questions)
+## Installation  
+${answers.installation}
+## Usage
+${answers.usage}
+## License
+![badge](https://img.shields.io/badge/license-${answers.license}-9cf)<br />
+${answers.license}
+## Contributing
+${answers.contribute}
+## Tests
+${answers.tests}
+## Questions
+${answers.questions}<br /> 
+
+
+Any questions?<br />
+
+###### [GitHub](https://github.com/test)<br /> 
+###### [Email](https://github.com/test)<br />
+  `)
 }
 
 module.exports = generateMarkdown; 
