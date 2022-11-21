@@ -1,10 +1,11 @@
-// TODO: Include packages needed for this application)
+// required modules
 const inquirer = require("inquirer")
+// custom module
 const generateMarkdown = require("./utils/generateMarkdown")
 
-// TODO: Create a function to initialize app
+// function to initialize app
 function init() {
-
+// inquirer prompts to take input which will then be inserted into the README.md
 inquirer.prompt([
     {
       name: "title",
@@ -27,6 +28,7 @@ inquirer.prompt([
       message: "How will users interact with your project?"
     },
     {
+      // rather than taking input license will allow you to select from a list of licenses
       name: "license",
       type: "list",
       message: "What license does your project use? (unsure? visit https://www.choosealicense.com)",
@@ -71,8 +73,8 @@ inquirer.prompt([
       message: "What is your e-mail?"
     },
   ])
+  // takes response and passes it through the generateMarkdown function
   .then((response) => {
-    console.log(response)
     generateMarkdown(response)
   }
   )

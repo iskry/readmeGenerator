@@ -1,6 +1,7 @@
+// takes writeFileSync from the fs module
 const {writeFileSync} = require('fs')
 
-// TODO: Create a function to generate markdown for README
+// function to generate README.md using the data that is passed through
 function generateMarkdown(answers) {
   writeFileSync(`./result/README.md`, `# ${answers.title}
 ![badge](https://img.shields.io/badge/license-${answers.license}-9cf)<br />
@@ -34,5 +35,5 @@ Any questions?<br />
 ###### [Email](https://github.com/test)<br />
   `)
 }
-
+// exports generateMarkdown function from module
 module.exports = generateMarkdown; 
