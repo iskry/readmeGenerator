@@ -2,6 +2,7 @@
 ![badge](https://img.shields.io/badge/license-MIT-9cf)<br />
 ## Description  
 A node.js application that takes user input to populate a README.md file. The generated README.md file is created in the result directory. 
+
 <img src="./media/READMEgen.gif" alt="Generator Animated" title="READMEGen" >
 
 ## Table of Contents
@@ -19,7 +20,7 @@ A node.js application that takes user input to populate a README.md file. The ge
 Run the following command in the root directory and answer the questions prompted:   
 >node index.js
 
-Video of usage can be found [here](.\media\READMEgen.webm)
+Video of usage can be found [here](\media\READMEgen.webm)
 ## License
 ![badge](https://img.shields.io/badge/license-MIT-9cf)<br />
 MIT
