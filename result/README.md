@@ -1,7 +1,8 @@
-# Project Title
+# Team Profile Generator
 ![badge](https://img.shields.io/badge/license-MIT-9cf)<br />
 ## Description  
-Description
+This project will create a team profile webpage based on user input obtained through Node. 
+<img src="./media/TeamGenGif.gif" alt="Generator Animated" title="TeamGen" >
 ## Table of Contents
 - [Description](#description)
 - [Installation](#installation)
@@ -11,21 +12,22 @@ Description
 - [Tests](#tests)
 - [Questions](#questions)
 ## Installation  
-Installation Steps
+>npm install inquirer && npm init
 ## Usage
-How to use
+Run the following command in the root directory and answer the questions prompted: >node index.js
+Video of usage can be found [here](/media/teamGenExample.webm)
 ## License
 ![badge](https://img.shields.io/badge/license-MIT-9cf)<br />
 ## Contributing
-Contribute steps
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 ## Tests
-Tests?
+Tests included. Run the following command in the root directory to run tests: >npm test
 ## Questions
-Contact info<br /> 
+<br /> 
 
 
 Any questions?<br />
 
-###### [GitHub](https://github.com/test)<br /> 
-###### [Email](https://github.com/test)<br />
+###### [GitHub](https://github.com/iskry)<br /> 
+
   

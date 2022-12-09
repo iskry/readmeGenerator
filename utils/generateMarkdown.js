@@ -31,8 +31,8 @@ ${answers.questions}<br />
 
 Any questions?<br />
 
-###### [GitHub](https://github.com/test)<br /> 
-###### [Email](https://github.com/test)<br />
+###### [GitHub](https://github.com/${answers.github})<br /> 
+###### [Email](${answers.email})<br />
   `)
 }
 // exports generateMarkdown function from module
